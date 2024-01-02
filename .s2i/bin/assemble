@@ -9,7 +9,7 @@ echo "---> Enabling s2i support in httpd24 image"
 config_s2i
 
 cp -Rf /tmp/src/*.html ./
-DATE=date "+%Y-%m-%d"
+DATE='date "+%Y-%m-%d"'
 echo "Page build on $DATE" >> ./info.html
 echo "Astra test, sed non test" >> ./info.html
 
