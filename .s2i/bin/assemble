@@ -8,6 +8,10 @@ echo "---> Enabling s2i support in httpd24 image"
 
 config_s2i
 
+DATE='date "+%Y-%m-%d"'
+echo "Page build on $DATE" >> ./info.html
+echo "Astra test, sed non test" >> ./info.html
+
 if [ -d ./httpd-cfg ]; then
   echo "---> Copying httpd configuration files..."
   if [ "$(ls -A ./httpd-cfg/*.conf)" ]; then
